@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join My Dungeons and Dragons Game Club</title>
+</head>
+<body>
+
+<h2>Dungeons and Dragons Club Information</h2>
+
+The Dungeons and Dragons Club is dedicated to running, playing, or even spectating games of D&D. As a totally fictitious club <br>
+this all means nothing but it would be super cool to actually make. We would organize groups for games and possible run a <br>
+competitive league. Fill out the form below to join. <br>
+
+<h2>Fill out the form below:</h2>
+
+<form method="POST" action="ListDnD.php">
+
+    <p><strong>Select one or both checkboxes</strong></p>
+    <input type="checkbox" id="dm" name="position[]" value="Dungeon Master"/>
+    <label for="dm"> I can DM</label>
+    <input type="checkbox" id="player" name="position[]" value="Player"/>
+    <label for="player"> I can be a player</label>
+    <input type="checkbox" id="spectator" name="position[]" value="Spectator"/>
+    <label for="spectator"> I can be a spectator</label>
+    <p>Name <input type="text" name="name"/></p>
+    <p>Date (mmddyy)<input type="text" name="date"/></p>
+    <p>Favorite D&D Class<input type="text" name="class"/></p>
+    <p>Additional Preferences <input type="text" name="preferences"/></p>
+
+    <p><input type="submit" name="Submit"/></p>
+
+</form>
+
+<p><a href="ShowMembers.php">Show Current D&D Club Members </a></p>
+
+</body>
+</html>
+
